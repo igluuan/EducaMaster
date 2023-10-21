@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../file03/app.css" />
-    <link rel="shortcut icon" href="../file03/img/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../file03/img/favicon.ico"
+      type="image/x-icon"
+    />
     <script
       src="https://kit.fontawesome.com/9eab525171.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
     <title>EducaMaster - Masterize seu aprendizado</title>
   </head>
   <body>
@@ -17,176 +23,62 @@
         <h1>
           EducaMaster
           <span
-            ><i class="fa-brands fa-slack fa-xl" style="color: #ffffff"></i
+            ><i class="fa-brands fa-slack fa-2xl" style="color: #ffa400"></i
           ></span>
         </h1>
       </div>
-      <div class="container-box-button">
-        <div class="box-button">
-          <a href="#" class="link-button"
-            >Cart
-            <span
-              ><i
-                class="fa-solid fa-cart-shopping fa-lg"
-                style="color: #ffffff"
-              ></i
-            ></span>
-          </a>
-        </div>
-        <div class="box-button">
-          <a href="#" class="link-button"
-            >Sign Up
-            <span
-              ><i class="fa-solid fa-user fa-lg" style="color: #ffffff"></i
-            ></span>
-          </a>
-        </div>
-      </div>
+      <button class="menu">
+        <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff"></i>
+      </button>
     </header>
-<main class="main">
-    <div class="box-text">
-        <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        accusamus molestiae, delectus sapiente laboriosam iusto minus autem
-        cum quidem! Natus?
-        </h2>
-        <button type="submit" id="btn-readmore" style="font-weight: bold;">READ MORE <i class="fa-solid fa-arrow-right fa-sm" style="color: #ffffff;"></i></button>
-    </div>
-    <div class="box-svg">
-        <img src="../file03/img/box-svg.svg" alt="svg" id="svg-from-box" />
+
+    <main class="main">
+      <section class="container-header">
+        <div class="box-text">
+          <h2 class="title-main">
+            Bem vindo ao <span style="color: orange">EducaMaster</span>! Sua
+            plataforma preferida de aprendizado.
+          </h2>
         </div>
-    <h1 id="title-carousel-video">Trendigs:</h1>
-    <div class="carousel-video">
-        <span>
-            <img src="../file03/img/arrowleft.png" alt="arrow-left">
-        </span>
-            <div class="card-video">
-                <div class="video-image"></div>
-                <p class="title-card-video">Lorem ipsum, dolor sit.</p>
-            </div>
-            <div class="card-video">
-                <div class="video-image"></div>
-                <p class="title-card-video">Lorem ipsum, dolor sit.</p>
-            </div>
-            <div class="card-video">
-                <div class="video-image"></div>
-                <p class="title-card-video">Lorem ipsum, dolor sit.</p>
-            </div>
-            <div class="card-video">
-                <div class="video-image"></div>
-                <p class="title-card-video">Lorem ipsum, dolor sit.</p>
-            </div>
-            <span>
-                <img src="../file03/img/arrowright.png" alt="arrow-right">
-            </span>
+        <div class="input-container">
+          <h2 class="input-title">
+            Dê um start na sua jornada!
+            <i class="fa-solid fa-caret-down" style="color: #ffffff"></i>
+          </h2>
+          <div class="box-input">
+            <input
+              type="text"
+              required="on"
+              placeholder="Seu email"
+              class="input-email"
+            />
+            <button type="submit" class="btn-input">START</button>
+          </div>
         </div>
-        <div class="border-white"></div>
-    </div>
-    <section class="signup">
-        <h1 id="title-signup">SIGN UP</h1>
-        <div class="svg-sign"><img src="../file03/img/signup.svg" alt="svg" id="svg-from-text"></div>
-        <div class="form">
-            <h1 id="title-sign">Create an account to receive news!</h1>
-            <form class="content-form">
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="text" id="input-email" required="on" tabindex="1">
+      </section>
+
+      <section class="container-main">
+        <h1 class="title-course" style="color: orange;">Cursos:</h1>
+        <div class="container-carousel">
+
+            <h2 class="slide-caption" style="border-bottom: 1px solid white;">Produtividade:</h2>
+            <div class="container-content">
+              <div id="prev-btn"><i class="fa-solid fa-arrow-left fa-2xl" style="color: #ffffff;"></i></div>
+              <div class="carousel-slide">
+                  <img src="../file03/img/produtividade.jpg" alt="img" />
+                  <p class="name-slide">TESTE01</p>
                 </div>
-                <div class="form-group">
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="input-pass" required="on" tabindex="2">
-                </div>
-                <button type="submit" id="btn-signup" style="font-weight: bold;">CREATE</button>
-            </form>
+                    <div class="carousel-slide">
+                        <img src="../file03/img/programacao.jpg" alt="img" />
+                        <p class="name-slide">TESTE02</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="../file03/img/design.jpg" alt="img" />
+                        <p class="name-slide">TESTE03</p>
+                    </div>
+              <div id="next-btn"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i></div>
         </div>
-    </section>
-    <div class="border-white"></div>
-    <div class="box-text-pack">
-        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus rerum sequi provident et minus quae quasi magni, eaque itaque consequuntur.</h2>
-        <div class="box-svg">
-            <img src="../file03/img/static.svg" alt="svg" id="svg-from-text">
-        </div>
-    </div>
-    <div class="carousel">
-        <div class="card">
-            <h2 class="title-card">PACK 1</h2>
-            <p class="text-card">TEST1TEST</p>
-            <p class="text-card">TEST2TEST</p>
-            <p class="box-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, nobis?
-            </p>
-            <button type="submit" class="btn-pay">ADD CART</button>
-        </div>
-        <div class="card">
-            <h2 class="title-card">PACK 2</h2>
-            <p class="text-card">TEST1TEST</p>
-            <p class="text-card">TEST2TEST</p>
-            <p class="box-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, nobis?
-            </p>
-            <button type="submit" class="btn-pay">ADD CART</button>
-        </div>
-        <div class="card">
-            <h2 class="title-card">PACK 3</h2>
-            <p class="text-card">TEST1TEST</p>
-            <p class="text-card">TEST2TEST</p>
-            <p class="box-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, nobis?
-            </p>
-            <button type="submit" class="btn-pay">ADD CART</button>
-        </div>
-    </div>
-    <section class="feedback">
-        <h1 id="title-feedback" style="text-align: center;">FEEDBACK</h1>
-        <div class="box-comment">
-            <div class="content-comment">
-                <div class="user-circle"></div>
-                <p id="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat dolorum ipsum voluptatibus assumenda placeat? Aliquid.</p>
-            </div>
-        </div>
-        <div class="box-comment">
-            <div class="content-comment">
-                <div class="user-circle"></div>
-                <p id="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat dolorum ipsum voluptatibus assumenda placeat? Aliquid.</p>
-            </div>
-        </div><div class="box-comment">
-            <div class="content-comment">
-                <div class="user-circle"></div>
-                <p id="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat dolorum ipsum voluptatibus assumenda placeat? Aliquid.</p>
-            </div>
-        </div><div class="box-comment">
-            <div class="content-comment">
-                <div class="user-circle"></div>
-                <p id="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat dolorum ipsum voluptatibus assumenda placeat? Aliquid.</p>
-            </div>
-        </div><div class="box-comment">
-            <div class="content-comment">
-                <div class="user-circle"></div>
-                <p id="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat dolorum ipsum voluptatibus assumenda placeat? Aliquid.</p>
-            </div>
-        </div><div class="box-comment">
-            <div class="content-comment">
-                <div class="user-circle"></div>
-                <p id="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat dolorum ipsum voluptatibus assumenda placeat? Aliquid.</p>
-            </div>
-        </div>
-    </section>
-</main>
-    <footer class="footer">
-    </div>
-    <div class="box-social">
-        <a href="#">Instagram <span><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></span></a>
-        <a href="#">Youtube <span><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></span></a>
-        <a href="#">GitHub <span><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></span></a>
-    </div>
-    <div class="box-logo-footer">
-      <h1>
-        EducaMaster
-        <span
-          ><i class="fa-brands fa-slack fa-xl" style="color: #ffffff"></i
-        ></span>
-      </h1>
-    </div>
-    </footer>
+      </section>
+    </main>
   </body>
 </html>

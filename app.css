@@ -16,15 +16,14 @@ html {
   font-size: 62.5%;
 }
 body {
-  height: 100vh;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   color: white;
   background: linear-gradient(
-      111.4deg,
-      rgba(7, 7, 9, 1) 6.5%,
-      rgba(27, 24, 113, 1) 93.2%
-    )
-    no-repeat center/cover;
+    111.4deg,
+    rgba(7, 7, 9, 1) 6.5%,
+    rgba(27, 24, 113, 1) 93.2%
+  );
 }
 .header {
   display: flex;
@@ -107,58 +106,72 @@ body {
   background-color: #db8e01;
 }
 .title-course {
-  font-size: 2.5em;
+  font-size: 3em;
 }
-.slide-caption {
-  font-size: 2em;
-}
-.container-main {
+.info {
   background-color: #2834423f;
   margin: 20px 0;
   padding: 25px;
   border-radius: 10px;
-}
-.container-carousel {
-  margin: 10px 0;
-  padding: 15px;
-  border: 1px solid orange;
-  border-radius: 10px;
-}
-.container-content {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 300px;
-  overflow: hidden;
-  margin: 20px auto 0 auto;
-  transition: width 0.5s ease;
+  flex-direction: column;
+  gap: 20px;
 }
-.carousel-slide {
+.text-info {
+  font-size: 2.5em;
+  text-shadow: 0 0 3px black;
+}
+.btn-plans {
+  background-color: orange;
+  color: white;
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  text-shadow: 0 0 3px black;
+  font-size: 2em;
+}
+.btn-plans:active {
+  background-color: #db8e01;
+}
+.questions {
   display: flex;
   flex-direction: column;
-  width: 160px;
-  height: 170px;
-  transition: transform 0.5s ease;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
 }
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
+details {
+  background-color: #2834423f;
+  padding: 10px;
   border-radius: 10px;
-  margin-top: 5px;
 }
-.name-slide {
-  margin-top: 5px;
-  text-align: center;
+.ask-title {
   font-size: 2em;
-  color: white;
 }
-#next-btn,
-#prev-btn {
+.ask-response {
+  font-size: 1.7em;
+  margin-top: 5px;
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.footer {
+  height: 100px;
+}
+.footer > h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+.redes {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: orange;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+.redes a {
+  color: white;
+  font-size: 1.7em;
+  text-decoration: none;
 }

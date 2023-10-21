@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <link
+      rel="shortcut icon"
+      href="../file03/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/9eab525171.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    <title>EducaMaster - Masterize seu aprendizado</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="box-logo">
+        <h1>
+          EducaMaster
+          <span
+            ><i class="fa-brands fa-slack fa-2xl" style="color: #ffa400"></i
+          ></span>
+        </h1>
+      </div>
+      <button class="menu">
+        <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff"></i>
+      </button>
+    </header>
+
+    <main class="main">
+      <section class="container-header">
+        <div class="box-text">
+          <h2 class="title-main">
+            Bem vindo ao <span style="color: orange">EducaMaster</span>! Sua
+            plataforma preferida de aprendizado.
+          </h2>
+        </div>
+        <div class="input-container">
+          <h2 class="input-title">
+            Dê um start na sua jornada!
+            <i class="fa-solid fa-caret-down" style="color: #ffffff"></i>
+          </h2>
+          <div class="box-input">
+            <input
+              type="text"
+              required="on"
+              placeholder="Seu email"
+              class="input-email"
+            />
+            <button type="submit" class="btn-input">START</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-main">
+        <h1 class="title-course" style="color: orange;">Cursos:</h1>
+        <div class="container-carousel">
+
+            <h2 class="slide-caption" style="border-bottom: 1px solid white;">Produtividade:</h2>
+            <div class="container-content">
+              <div id="prev-btn"><i class="fa-solid fa-arrow-left fa-2xl" style="color: #ffffff;"></i></div>
+              <div class="carousel-slide">
+                  <img src="../file03/img/produtividade.jpg" alt="img" />
+                  <p class="name-slide">TESTE01</p>
+                </div>
+                    <div class="carousel-slide">
+                        <img src="../file03/img/programacao.jpg" alt="img" />
+                        <p class="name-slide">TESTE02</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="../file03/img/design.jpg" alt="img" />
+                        <p class="name-slide">TESTE03</p>
+                    </div>
+              <div id="next-btn"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

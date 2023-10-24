@@ -1,125 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="app.css" />
-    <link
-      rel="shortcut icon"
-      href="../file03/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <script
-      src="https://kit.fontawesome.com/9eab525171.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="shortcut icon" href="../file03/img/favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/9eab525171.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
     <title>EducaMaster - Masterize seu aprendizado</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="box-logo">
-        <h1>
-          EducaMaster
-          <span
-            ><i class="fa-brands fa-slack fa-2xl" style="color: #ffa400"></i
-          ></span>
-        </h1>
-      </div>
-      <button class="menu">
-        <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff"></i>
-      </button>
-    </header>
+</head>
 
-    <main class="main">
-      <section class="container-header">
-        <div class="box-text">
-          <h2 class="title-main">
-            Bem vindo ao <span style="color: orange">EducaMaster</span>! Sua
-            plataforma preferida de aprendizado.
-          </h2>
+<body>
+    <div class="container-fluid p-lg-5">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="mt-5 ms-3 pt-1">
+                    EducaMaster
+                    <span><i class=" fa-brands fa-slack fa-2xl" style="color: #ffa400"></i></span>
+                </h1>
+
+            </div>
+            <div class="col-6">
+                <button class="btn btn-primary bg-transparent  border-0 fs-2"
+                    style="position: absolute; top: 33px; right: 30px;" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars fa-2xl"
+                        style="color: #ffffff;"></i></button>
+
+                <div class="offcanvas offcanvas-end w-75" style="background: linear-gradient(
+                    111.4deg,
+                    rgba(7, 7, 9, 1) 6.5%,
+                    rgba(27, 24, 113, 1) 93.2%
+                  ); transition: all 0.5s;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header mt-5">
+                        <h1 class="text-light ms-3 border-bottom" style="font-size: 3em;">Menu</h1>
+                        <button type="button" class="btn-close text-reset fs-1 me-2" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item fs-1 bg-transparent text-light mb-4"><i
+                                    class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i> Cart</li>
+                            <li class="list-group-item fs-1 bg-transparent text-light mb-4"><i
+                                    class="fa-solid fa-coins fa-lg" style="color: #ffffff;"></i> Plans</li>
+                            <li class="list-group-item fs-1 bg-transparent text-light mb-4"><i
+                                    class="fa-solid fa-right-to-bracket fa-lg" style="color: #ffffff;"></i> Sign Up</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="input-container">
-          <h2 class="input-title">
-            Dê um start na sua jornada!
-            <i class="fa-solid fa-caret-down" style="color: #ffffff"></i>
-          </h2>
-          <div class="box-input">
-            <input
-              type="text"
-              required="on"
-              placeholder="Seu email"
-              class="input-email"
-            />
-            <button type="submit" class="btn-input">START</button>
-          </div>
+    </div>
+    <div class="container-fluid">
+
+        <div class="row mt-5" style="background-color: #00000031; padding: 10px; border-radius: 10px;">
+            <h1 style="font-size: 3em;">Bem vindo ao <span style="color: #ffa500;">EducaMaster</span>!
+                Sua plataforma preferida de aprendizado!</h1>
         </div>
-      </section>
-      <section class="info">
-        <h1 class="text-info">
-          Já somos <span style="color: #ffa500">10 mil</span> alunos, e
-          possuimos 300 cursos de diversas áreas!
-        </h1>
-        <button class="btn-plans">Veja nossos planos!</button>
-      </section>
-      <section class="questions">
-        <details>
-          <summary class="ask-title">Quais são as formas de pagamento?</summary>
-          <p class="ask-response">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, non.
-          </p>
-        </details>
-        <details>
-          <summary class="ask-title">Como posso assistir as aulas?</summary>
-          <p class="ask-response">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, non.
-          </p>
-        </details>
-        <details>
-          <summary class="ask-title">Como tiro minhas dúvidas?</summary>
-          <p class="ask-response">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, non.
-          </p>
-        </details>
-      </section>
-    </main>
-    <footer class="footer">
-      <h2>
-        Redes Sociais
-        <span
-          ><i
-            class="fa-solid fa-magnifying-glass fa-sm"
-            style="color: #ffffff"
-          ></i
-        ></span>
-      </h2>
-      <div class="redes">
-        <a href=""
-          >Youtube
-          <span
-            ><i
-              class="fa-brands fa-youtube fa-xl"
-              style="color: #ffa500"
-            ></i></span
-        ></a>
-        <a href=""
-          >Instagram
-          <span
-            ><i
-              class="fa-brands fa-instagram fa-xl"
-              style="color: #ffa500"
-            ></i></span
-        ></a>
-        <a href=""
-          >Github
-          <span
-            ><i
-              class="fa-brands fa-github fa-xl"
-              style="color: #ffa500"
-            ></i></span
-        ></a>
-      </div>
-    </footer>
-  </body>
+        <div class="input-group mt-3">
+            <input type="email" class="form-control fs-1 w-25" id="email" placeholder="name@examples.com" required="on"
+                autocomplete="off">
+            <button class="btn w-25 text-light fs-2" type="button" id="email"
+                style="background-color: #ffa500;">START</button>
+        </div>
+        <div class="row mt-3" style=" padding: 10px;">
+            <h1 class="text-center mb-4" style="font-size: 2.3em;">
+                Dê um start na sua jornada!
+            </h1>
+        </div>
+        <div class="row mt-5>
+            <div class=" box" style="background-color: #00000030; border-radius: 10px;">
+            <h1 class="text-center" style="font-size: 2.5em; padding: 10px; ">Confira alguns de
+                nossos <span style="color: #ffa500;">planos</span>!</h1>
+            <button type="submit" class="btn  fs-1 text-light "
+                style="background-color: #ffa500; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">Ver
+                Planos</button>
+        </div>
+
+        <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+            <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-1 mb-3"
+                        style="background-color: #00000030; color: white; border-radius: 10px;" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        Quais são as formas de pagamento?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body fs-2">Placeholder content for this
+                        accordion, which is intended to
+                        demonstrate
+                        the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-3 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-1 mb-3"
+                        style="background-color: #00000030; color: white; border-radius: 10px;" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        Como posso assistir as aulas?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body fs-2">Placeholder content for this accordion, which is intended to
+                        demonstrate
+                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                        this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-1 mb-3"
+                        style="background-color: #00000030; color: white; border-radius: 10px;" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        Como posso tirar minhas duvidas?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body fs-2">Placeholder content for this accordion, which is intended to
+                        demonstrate
+                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting happening here in terms of content, but just filling up the space to make it look, at
+                        least at first glance, a bit more representative of how this would look in a real-world
+                        application.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
 </html>

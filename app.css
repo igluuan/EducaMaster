@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 :root {
   --color1: #235fa8;
   --color2: #304f75;
@@ -16,7 +11,7 @@ html {
   font-size: 62.5%;
 }
 body {
-    height: 100vh;
+  height: 100vh;
   font-family: 'Poppins', sans-serif;
   color: white;
   background: linear-gradient(
@@ -24,83 +19,146 @@ body {
     rgba(7, 7, 9, 1) 6.5%,
     rgba(27, 24, 113, 1) 93.2%
   );
-  padding: 0 10px;
 }
-#btn-menu{
-    position: absolute; 
-    top: 33px; 
-    right: 30px;
+.header {
+  background: linear-gradient(
+    111.4deg,
+    rgba(7, 7, 9, 1) 6.5%,
+    rgba(27, 24, 113, 1) 93.2%
+  );
+  z-index: 100;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 8px 6px -6px #00000020;
 }
-#right-menu{
-    background: linear-gradient(
-                    111.4deg,
-                    rgba(7, 7, 9, 1) 6.5%,
-                    rgba(27, 24, 113, 1) 93.2%
-                  );
-                   transition: all 0.5s;
+#content-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
-#text-menu-right{
-    font-size: 3em;
+.box-logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
-#box-header{
-    background-color: #00000031; 
-    padding: 10px;
-     border-radius: 10px;
+
+.icon-logo {
+  width: 40px;
+  position: absolute;
+  top: 6px;
+  left: 20px;
 }
-#text-header{
-    font-size: 3em; 
+
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
-#email-btn{
-    background-color: #ffa500;
+.menu > li,
+a {
+  color: white;
+  font-size: 1.4em;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 7px;
 }
-#box-text-start{
-    padding: 10px;
+.menu > li {
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+  transform-origin: left;
 }
-#text-start{
-    font-size: 2.3em;
+.menu > li:hover {
+  border-bottom: 1px solid white;
 }
-#box-plan{
-    background-color: #00000030; border-radius: 10px;
+.main {
+  padding: 0 20px;
 }
-#text-plan{
-    font-size: 2.5em; 
-    padding: 10px; 
+.box-one {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 75px;
+  box-shadow: 0px 8px 6px -6px #00000020;
 }
-#btn-plan{
-    background-color: #ffa500; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; 
-    border: none;
-     font-size: 2.5em;
+.text-box {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
 }
-#modal-dialog{
-    transition: all 0.5s;
-     z-index: 999;
+.text-header {
+  width: 325px;
+  font-size: 4em;
+  line-height: 1.2em;
+  text-shadow: 0px 0px 5px black;
 }
-#modal-content{
-    background-color: #0264db; 
-    width: 100wv; 
-    height: 90vh; 
-    border-radius: 10px;
+.svg-rocket {
+  width: 350px;
+  height: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
-#exampleModalLabel{
-    font-size: 3em;
+.svg-rocket:hover {
+  transform: scale(1.05);
 }
-#btn-close{
-    font-size: 3em
+.carousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 0;
 }
-#card{
-    width: 300px; 
-    height: 300px; 
-    border-radius: 10px; 
-    background-color: rgba(255, 255, 255, 0.474);
-     padding: 20px;
+.card {
+  background-color: #00000030;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px transparent;
+  transition: all 0.5s;
+  cursor: pointer;
 }
-#card-text{
-    font-weight: bold; font-size: 3em;
+.card:hover {
+  box-shadow: 0 0 2px white;
 }
-#btn-buy{
-    border-radius: 10px; margin: 10px 0; background-color: #ffa500;
+.content-card {
+  padding: 10px 15px;
 }
-#btn-open{
-    background-color: #00000030; 
-    color: white; border-radius: 10px;
+.box-icon {
+  width: 100%;
+  text-align: center;
+}
+.svg-icon {
+  width: 100px;
+}
+.text-card {
+  width: 100%;
+}
+#btn-cart {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  margin-right: 7px;
+}
+#container-cart {
+  background-color: #292e33;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+}
+.svg-close {
+  position: relative;
+  top: 65px;
+  right: -195px;
+  width: 50px;
 }

@@ -25,18 +25,14 @@
 
             </div>
             <div class="col-6">
-                <button class="btn btn-primary bg-transparent  border-0 fs-2"
-                    style="position: absolute; top: 33px; right: 30px;" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars fa-2xl"
-                        style="color: #ffffff;"></i></button>
+                <button class="btn btn-primary bg-transparent  border-0 fs-2" id="btn-menu" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></button>
 
-                <div class="offcanvas offcanvas-end w-75" style="background: linear-gradient(
-                    111.4deg,
-                    rgba(7, 7, 9, 1) 6.5%,
-                    rgba(27, 24, 113, 1) 93.2%
-                  ); transition: all 0.5s;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas offcanvas-end w-75" id="right-menu" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header mt-5">
-                        <h1 class="text-light ms-3 border-bottom" style="font-size: 3em;">Menu</h1>
+                        <h1 class="text-light ms-3 border-bottom" id="text-menu-right">Menu</h1>
                         <button type="button" class="btn-close text-reset fs-1 me-2" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -56,54 +52,48 @@
     </div>
     <div class="container-fluid">
 
-        <div class="row mt-5" style="background-color: #00000031; padding: 10px; border-radius: 10px;">
-            <h1 style="font-size: 3em;">Bem vindo ao <span style="color: #ffa500;">EducaMaster</span>!
+        <div class="row mt-5" id="box-header">
+            <h1 id="text-header">Bem vindo ao <span style="color: #ffa500;">EducaMaster</span>!
                 Sua plataforma preferida de aprendizado!</h1>
         </div>
         <div class="input-group mt-3">
             <input type="email" class="form-control fs-1 w-25" id="email" placeholder="name@examples.com" required="on"
                 autocomplete="off">
-            <button class="btn w-25 text-light fs-2" type="button" id="email-btn"
-                style="background-color: #ffa500;">START</button>
+            <button class="btn w-25 text-light fs-2" type="button" id="email-btn">START</button>
         </div>
-        <div class="row mt-3" style=" padding: 10px;">
-            <h1 class="text-center mb-4" style="font-size: 2.3em;">
+        <div class="row mt-3" id="box-text-start">
+            <h1 class="text-center mb-4" id="text-start">
                 Dê um start na sua jornada!
             </h1>
         </div>
         <div class="row mt-5>
-            <div class=" box" style="background-color: #00000030; border-radius: 10px;">
-            <h1 class="text-center" style="font-size: 2.5em; padding: 10px; ">Confira alguns de
+            <div class=" box" id="box-plan">
+            <h1 class="text-center" id="text-plan">Confira alguns de
                 nossos <span style="color: #ffa500;">planos</span>!</h1>
 
             <!-- Button trigger modal -->
-            <button type="button"
-                style="background-color: #ffa500; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border: none; font-size: 2.5em;"
-                class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" id="btn-plan" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 Ver Planos
             </button>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog" style="transition: all 0.5s; z-index: 999;">
-                    <div class="modal-content mt-5"
-                        style="background-color: #0264db; width: 100wv; height: 90vh; border-radius: 10px;">
+                <div class="modal-dialog" id="modal-dialog">
+                    <div class="modal-content mt-5" id="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title" id="exampleModalLabel" style="font-size: 3em;">Planos</h1>
+                            <h1 class="modal-title" id="exampleModalLabel">Planos</h1>
                             <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"
-                                style="font-size: 3em;"></button>
+                                id="btn-close"></button>
                         </div>
                         <div class="modal-body m-auto overflow-auto">
-                            <div class="card mb-3 text-center"
-                                style="width: 300px; height: 300px; border-radius: 10px; background-color: rgba(255, 255, 255, 0.474); padding: 20px;">
-                                <h1 class="card-title text-light text-center"
-                                    style="font-weight: bold; font-size: 3em;">
+                            <div class="card mb-3 text-center" id="card">
+                                <h1 class="card-title text-light text-center" id="card-text">
                                     BÁSICO</h3>
                                     <div class="card-body p-0">
                                         <h2 class=" text-dark">Perfeito para começar:</h2>
-                                        <button type="submit" class="btn fs-1 text-light border-0"
-                                            style="border-radius: 10px; margin: 10px 0; background-color: #ffa500;">Comprar
+                                        <button type="submit" class="btn fs-1 text-light border-0" id="btn-buy">Comprar
                                             agora</button>
                                         <ul class="list-group border-0" style="font-size: 2em;">
                                             <li class="list-group-item bg-transparent  border-0 text-light">teste1
@@ -121,124 +111,108 @@
                                         </ul>
                                     </div>
                             </div>
-                            <div class="card mb-3 text-center"
-                                style="width: 300px; height: 300px; border-radius: 10px; background-color: rgba(255, 255, 255, 0.474); padding: 20px;">
-                                <h1 class="card-title text-light text-center"
-                                    style="font-weight: bold; font-size: 3em;">
+                            <div class="card mb-3 text-center" id="card">
+                                <h1 class="card-title text-light text-center" id="card-text"">
                                     MEDIANO</h3>
-                                    <div class="card-body p-0">
-                                        <h2 class=" text-dark">Focado nos estudos!</h2>
-                                        <button type="submit" class="btn fs-1 text-light border-0"
-                                            style="border-radius: 10px; margin: 10px 0; background-color: #ffa500;">Comprar
-                                            agora</button>
-                                        <ul class="list-group border-0" style="font-size: 2em;">
-                                            <li class="list-group-item bg-transparent  border-0 text-light">teste1
-                                                <span><i class="fa-solid fa-check fa-lg"
-                                                        style="color: #1eff00;"></i></span>
-                                            </li>
-                                            <li class="list-group-item bg-transparent border-0 text-light">teste2
-                                                <span><i class="fa-solid fa-check fa-lg"
-                                                        style="color: #1eff00;"></i></span>
-                                            </li>
-                                            <li class="list-group-item bg-transparent  border-0 text-light">teste3
-                                                <span><i class="fa-solid fa-xmark fa-lg"
-                                                        style="color: #ff0000;"></i></span>
-                                            </li>
+                                    <div class=" card-body p-0">
+                                    <h2 class=" text-dark">Focado nos estudos!</h2>
+                                    <button type="submit" class="btn fs-1 text-light border-0" id="btn-buy"">Comprar
+                                        agora</button>
+                                    <ul class=" list-group border-0" style="font-size: 2em;">
+                                        <li class="list-group-item bg-transparent  border-0 text-light">teste1
+                                            <span><i class="fa-solid fa-check fa-lg" style="color: #1eff00;"></i></span>
+                                        </li>
+                                        <li class="list-group-item bg-transparent border-0 text-light">teste2
+                                            <span><i class="fa-solid fa-check fa-lg" style="color: #1eff00;"></i></span>
+                                        </li>
+                                        <li class="list-group-item bg-transparent  border-0 text-light">teste3
+                                            <span><i class="fa-solid fa-xmark fa-lg" style="color: #ff0000;"></i></span>
+                                        </li>
                                         </ul>
-                                    </div>
                             </div>
-                            <div class="card mb-3 text-center"
-                                style="width: 300px; height: 300px; border-radius: 10px; background-color: rgba(255, 255, 255, 0.474); padding: 20px;">
-                                <h1 class="card-title text-light text-center"
-                                    style="font-weight: bold; font-size: 3em;">
-                                    FULL</h3>
-                                    <div class="card-body p-0">
-                                        <h2 class=" text-dark">Plataforma 100% completa!</h2>
-                                        <button type="submit" class="btn fs-1 text-light border-0"
-                                            style="border-radius: 10px; margin: 10px 0; background-color: #ffa500;">Comprar
-                                            agora</button>
-                                        <ul class="list-group border-0" style="font-size: 2em;">
-                                            <li class="list-group-item bg-transparent  border-0 text-light">teste1
-                                                <span><i class="fa-solid fa-check fa-lg"
-                                                        style="color: #1eff00;"></i></span>
-                                            </li>
-                                            <li class="list-group-item bg-transparent border-0 text-light">teste2
-                                                <span><i class="fa-solid fa-check fa-lg"
-                                                        style="color: #1eff00;"></i></span>
-                                            </li>
-                                            <li class="list-group-item bg-transparent  border-0 text-light">teste3
-                                                <span><i class="fa-solid fa-check fa-lg"
-                                                        style="color: #1eff00;"></i></span>
-                                            </li>
-                                        </ul>
-                                    </div>
+                        </div>
+                        <div class="card mb-3 text-center" id="card"">
+                            <h1 class=" card-title text-light text-center" id="card-text">
+                            FULL</h3>
+                            <div class="card-body p-0">
+                                <h2 class=" text-dark">Plataforma 100% completa!</h2>
+                                <button type="submit" class="btn fs-1 text-light border-0" id="btn-buy"">Comprar
+                                    agora</button>
+                                <ul class=" list-group border-0" style="font-size: 2em;">
+                                    <li class="list-group-item bg-transparent  border-0 text-light">teste1
+                                        <span><i class="fa-solid fa-check fa-lg" style="color: #1eff00;"></i></span>
+                                    </li>
+                                    <li class="list-group-item bg-transparent border-0 text-light">teste2
+                                        <span><i class="fa-solid fa-check fa-lg" style="color: #1eff00;"></i></span>
+                                    </li>
+                                    <li class="list-group-item bg-transparent  border-0 text-light">teste3
+                                        <span><i class="fa-solid fa-check fa-lg" style="color: #1eff00;"></i></span>
+                                    </li>
+                                    </ul>
                             </div>
+                        </div>
 
-                        </div>
-                        <div class="modal-footer m-auto">
-                            <h1 class="">
-                                EducaMaster
-                                <span><i class=" fa-brands fa-slack fa-2xl" style="color: #ffa400"></i></span>
-                            </h1>
-                        </div>
+                    </div>
+                    <div class="modal-footer m-auto">
+                        <h1 class="">
+                            EducaMaster
+                            <span><i class=" fa-brands fa-slack fa-2xl" style="color: #ffa400"></i></span>
+                        </h1>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
-            <div class="accordion-item bg-transparent">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fs-1 mb-3"
-                        style="background-color: #00000030; color: white; border-radius: 10px;" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                        aria-controls="flush-collapseOne">
-                        Quais são as formas de pagamento?
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body fs-2">Placeholder content for this
-                        accordion, which is intended to
-                        demonstrate
-                        the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                </div>
-            </div>
-            <div class="accordion-item mb-3 bg-transparent">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fs-1 mb-3"
-                        style="background-color: #00000030; color: white; border-radius: 10px;" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                        aria-controls="flush-collapseTwo">
-                        Como posso assistir as aulas?
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body fs-2">Placeholder content for this accordion, which is intended to
-                        demonstrate
-                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                        this being filled with some actual content.</div>
-                </div>
-            </div>
-            <div class="accordion-item bg-transparent">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fs-1 mb-3"
-                        style="background-color: #00000030; color: white; border-radius: 10px;" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                        aria-controls="flush-collapseThree">
-                        Como posso tirar minhas duvidas?
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body fs-2">Placeholder content for this accordion, which is intended to
-                        demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.</div>
-                </div>
+    <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+        <div class="accordion-item bg-transparent">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-1 mb-3" id="btn-open" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    Quais são as formas de pagamento?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fs-2">Placeholder content for this
+                    accordion, which is intended to
+                    demonstrate
+                    the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
             </div>
         </div>
+        <div class="accordion-item mb-3 bg-transparent">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-1 mb-3" id="btn-open"" type=" button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                    aria-controls="flush-collapseTwo">
+                    Como posso assistir as aulas?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fs-2">Placeholder content for this accordion, which is intended to
+                    demonstrate
+                    the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                    this being filled with some actual content.</div>
+            </div>
+        </div>
+        <div class="accordion-item bg-transparent">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-1 mb-3" id="btn-open" type=" button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                    aria-controls="flush-collapseThree">
+                    Como posso tirar minhas duvidas?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fs-2">Placeholder content for this accordion, which is intended to
+                    demonstrate
+                    the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                    exciting happening here in terms of content, but just filling up the space to make it look, at
+                    least at first glance, a bit more representative of how this would look in a real-world
+                    application.</div>
+            </div>
+        </div>
+    </div>
 
     </div>
     </div>

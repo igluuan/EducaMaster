@@ -26,3 +26,81 @@ body {
   );
   padding: 0 10px;
 }
+#btn-menu{
+    position: absolute; 
+    top: 33px; 
+    right: 30px;
+}
+#right-menu{
+    background: linear-gradient(
+                    111.4deg,
+                    rgba(7, 7, 9, 1) 6.5%,
+                    rgba(27, 24, 113, 1) 93.2%
+                  );
+                   transition: all 0.5s;
+}
+#text-menu-right{
+    font-size: 3em;
+}
+#box-header{
+    background-color: #00000031; 
+    padding: 10px;
+     border-radius: 10px;
+}
+#text-header{
+    font-size: 3em; 
+}
+#email-btn{
+    background-color: #ffa500;
+}
+#box-text-start{
+    padding: 10px;
+}
+#text-start{
+    font-size: 2.3em;
+}
+#box-plan{
+    background-color: #00000030; border-radius: 10px;
+}
+#text-plan{
+    font-size: 2.5em; 
+    padding: 10px; 
+}
+#btn-plan{
+    background-color: #ffa500; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; 
+    border: none;
+     font-size: 2.5em;
+}
+#modal-dialog{
+    transition: all 0.5s;
+     z-index: 999;
+}
+#modal-content{
+    background-color: #0264db; 
+    width: 100wv; 
+    height: 90vh; 
+    border-radius: 10px;
+}
+#exampleModalLabel{
+    font-size: 3em;
+}
+#btn-close{
+    font-size: 3em
+}
+#card{
+    width: 300px; 
+    height: 300px; 
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.474);
+     padding: 20px;
+}
+#card-text{
+    font-weight: bold; font-size: 3em;
+}
+#btn-buy{
+    border-radius: 10px; margin: 10px 0; background-color: #ffa500;
+}
+#btn-open{
+    background-color: #00000030; 
+    color: white; border-radius: 10px;
+}

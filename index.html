@@ -24,14 +24,14 @@
                     <li id="cart"><button id="btn-cart">Cart</button><i class="fa-solid fa-cart-shopping fa-lg"
                             style="color: #ffffff;"></i>
                     </li>
-                    <li><a href="#">Planos</a><i class="fa-solid fa-coins fa-lg" style="color: #ffffff;"></i></li>
+                    <li><a href="#plans">Planos</a><i class="fa-solid fa-coins fa-lg" style="color: #ffffff;"></i></li>
                     <li><a href="#">Login</a><i class="fa-solid fa-right-to-bracket fa-lg" style="color: #ffffff;"></i>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div id="container-cart" style="display: block;">
+    <div id="container-cart" style="display: none;">
 
         <div class="header-cart">
             <div class="box-title-container">
@@ -128,23 +128,137 @@
             </div>
 
         </section>
+        <section class="planos" id="plans">
+            <div class="box-text-plans">
+                <h1>
+                    Encontre o plano perfeito para você e sua empresa!
+                </h1>
+                <h3>
+                    200 empresas estão conosco, faça parte você tambêm.
+                </h3>
+            </div>
+            <div class="carousel-plans">
+                <div class="card-plans">
+                    <div class="content-card-plans">
+                        <span class="icon-card">
+                            <img src="img/hand-icon.svg" alt="hand">
+                        </span>
+                        <h1 class="title-card-plans">
+                            EducaBasic
+                        </h1>
+                        <p class="sub-title-plans">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+                        <h1 class="card-princing-plans">
+                            R$29,99/mês
+                        </h1>
+                        <p class="subtitle-princing">ou R$199,90 por ano.</p>
+                        <button class="btn-card-plans">
+                            Escolher
+                        </button>
+                    </div>
+                </div>
+                <div class="card-plans">
+                    <div class="content-card-plans">
+                        <span class="pop-best">
+                            <img src="img/best-seller-icon.svg" alt="best" class="icon-best">
+                            <p class="text-best">Mais escolhido!</p>
+                        </span><span class="icon-card">
+                            <img src="img/hand-icon.svg" alt="hand">
+                        </span>
+                        <h1 class="title-card-plans">
+                            EducaBasic
+                        </h1>
+                        <p class="sub-title-plans">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+                        <h1 class="card-princing-plans">
+                            R$29,99/mês
+                        </h1>
+                        <p class="subtitle-princing">ou R$199,90 por ano.</p>
+                        <button class="btn-card-plans" type="submit">
+                            Escolher
+                        </button>
+                    </div>
+                </div>
+                <div class="card-plans">
+                    <div class="content-card-plans"><span class="icon-card">
+                            <img src="img/hand-icon.svg" alt="hand">
+                        </span>
+                        <h1 class="title-card-plans">
+                            EducaBasic
+                        </h1>
+                        <p class="sub-title-plans">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+                        <h1 class="card-princing-plans">
+                            R$29,99/mês
+                        </h1>
+                        <p class="subtitle-princing">ou R$199,90 por ano.</p>
+                        <button class="btn-card-plans">
+                            Escolher
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="box-title-form">
+                <h1>Faça login e desfrute de todas as <span style="color: #ffa500;">novidades</span> futuras!
+                </h1>
+            </div>
+            <div class="bg-color-form">
+                <div class="box-form">
+                    <form action="#" class="content-form">
+                        <h2 class="title-card">Login</h2>
+                        <div class="create-account">
+                            <p>
+                                Novo usuário?
+                            </p>
+                            <a href="#">Crie uma conta
+                                agora!</a>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email address" required="on" autocomplete="off"
+                                minlength="2" id="emailInput" placeholder="Email" onfocus="focusInput('emailInput')"
+                                onblur="blurInput('emailInput')">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password (+8 characters)" required="on"
+                                autocomplete="off" minlength="2" id="passwordInput" placeholder="Senha"
+                                onfocus="focusInput('passwordInput')" onblur="blurInput('passwordInput')">
+                        </div>
+                        <a href="#" class="forgout">Esqueceu a senha?</a>
+                        <div class="box-wrapper">
+                            <ul class="circle">
+                                <a href="#" class="social"><img src="img/facebook-icon.svg" alt="facebook"></a>
+                                <a href="#" class="social"><img src=" img/github-icon.svg" alt="github"></a>
+                                <a href="#" class="social"><img src=" img/google-icon.svg" alt="google"></a>
+                            </ul>
+                        </div>
+                        <button type="submit" class="btn-sign">
+                            Entrar
+                        </button>
+                    </form>
+                </div>
+                <div class="box-svg-right"><img src="img/svg-right.svg" alt="svg-right" class="svg-right"></div>
+            </div>
+        </section>
     </main>
     <script src="app.js"></script>
     <script>
-        'use strict';
-        const btnCart = document.getElementById('btn-cart');
-        const containerCart = document.getElementById('container-cart');
-        const btnClose = document.getElementById('btn-close');
-        const cartOpen = document.getElementById('cart');
+        function focusInput(inputId) {
+            var input = document.getElementById(inputId);
+            input.placeholder = ""; // Remove o texto do placeholder
+            input.classList.add("placeholder-hidden"); // Adiciona a classe para tornar o texto invisível
+        }
 
-        btnCart.addEventListener('click', function () {
-            containerCart.style.display = 'block';
-            cartOpen.style.display = 'none';
-        });
-        btnClose.addEventListener('click', function () {
-            containerCart.style.display = 'none';
-            cartOpen.style.display = 'block';
-        });
+        function blurInput(inputId) {
+            var input = document.getElementById(inputId);
+            input.placeholder = inputId === "emailInput" ? "Email address" : "Password (+ 8 characters)"; // Restaura o texto do placeholder
+            input.classList.remove("placeholder-hidden"); // Remove a classe para tornar o texto visível novamente
+        }
+
     </script>
 </body>
 

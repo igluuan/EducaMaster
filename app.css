@@ -547,7 +547,7 @@ a {
     height: 375px;
   }
 }
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .text-header {
     font-size: 3em;
     text-align: center;

@@ -61,6 +61,18 @@ body {
   color: white;
   cursor: pointer;
 }
+#btn-cart {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  margin-right: 7px;
+  cursor: pointer;
+}
+#btn-cart,
+li {
+  padding: 5px;
+}
 .menu {
   width: 100%;
   display: flex;

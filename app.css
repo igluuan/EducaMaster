@@ -559,7 +559,7 @@ a {
     height: 375px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 630px) {
   .text-header {
     font-size: 3em;
     text-align: center;
@@ -603,5 +603,54 @@ a {
   }
   .btn-menu {
     display: block;
+  }
+}
+@media screen and (max-width: 470px) {
+  .btn-prev,
+  .btn-next {
+    display: none;
+  }
+  .btn-prev > img,
+  .btn-next > img {
+    display: none;
+  }
+
+  .planos {
+    padding: 0;
+  }
+  .carousel-plans {
+    padding: 20px 0;
+  }
+  .card-plans {
+    display: block;
+    margin: 0 auto;
+  }
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+  .svg-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .text-card {
+    font-size: 1em;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  .main {
+    padding: 0;
+  }
+  .box-text-plans {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+  .social-media p {
+    display: none;
+  }
+  .midias {
+    margin: 0 auto;
   }
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" type="text/css" href="app.css" />
     <script src="https://kit.fontawesome.com/9eab525171.js" crossorigin="anonymous"></script>
+
     <title>EducaMaster - Masterize seu aprendizado</title>
 </head>
 
@@ -19,6 +20,15 @@
                     <img src="img/icon-logo.svg" alt="logo" class="icon-logo">
                 </span>
             </div>
+            <button class="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 448 512">
+                    <style>
+                        svg {
+                            fill: #ffffff
+                        }
+                    </style>
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg></button>
             <div class="nav">
                 <ul class="menu">
                     <li id="cart"><button id="btn-cart">Cart</button><i class="fa-solid fa-cart-shopping fa-lg"
@@ -30,54 +40,6 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div id="container-cart" style="display: none;">
-
-        <div class="header-cart">
-            <div class="box-title-container">
-                <h2>Cart <span><i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i></span></h2>
-            </div>
-            <button id="btn-close">
-                <img src="img/close-btn.svg" alt="close" class="svg-close">
-            </button>
-        </div>
-
-        <div class="content-container">
-            <div class="item-cart">
-                <div class="content-item">
-                    <h1>item</h1>
-                    <span><img src="img/remove-cart.svg" alt="remove" class="svg-remove"></span>
-                </div>
-            </div>
-            <div class="item-cart">
-                <div class="content-item">
-                    <h1>item</h1>
-                    <span><img src="img/remove-cart.svg" alt="remove" class="svg-remove"></span>
-                </div>
-            </div>
-            <div class="item-cart">
-                <div class="content-item">
-                    <h1>item</h1>
-                    <span><img src="img/remove-cart.svg" alt="remove" class="svg-remove"></span>
-                </div>
-            </div>
-            <div class="item-cart">
-                <div class="content-item">
-                    <h1>item</h1>
-                    <span><img src="img/remove-cart.svg" alt="remove" class="svg-remove"></span>
-                </div>
-            </div>
-            <div class="item-cart">
-                <div class="content-item">
-                    <h1>item</h1>
-                    <span><img src="img/remove-cart.svg" alt="remove" class="svg-remove"></span>
-                </div>
-            </div>
-            <button type="submit" class="btn-buy-cart">
-                Comprar agora
-            </button>
-        </div>
-    </div>
     </div>
     <main class="main">
         <section class="box-one">
@@ -128,8 +90,8 @@
             </div>
 
         </section>
-        <section class="planos" id="plans">
-            <div class="box-text-plans">
+        <section class="planos">
+            <div class="box-text-plans" id="plans">
                 <h1>
                     Encontre o plano perfeito para você e sua empresa!
                 </h1>
@@ -138,68 +100,90 @@
                 </h3>
             </div>
             <div class="carousel-plans">
+                <button class="btn-previos">
+                    <img src="img/arrow-prev.svg" alt="prev" width="50px" height="50px" class="btn-prev controls">
+                </button>
                 <div class="card-plans">
                     <div class="content-card-plans">
-                        <span class="icon-card">
-                            <img src="img/hand-icon.svg" alt="hand">
-                        </span>
-                        <h1 class="title-card-plans">
-                            EducaBasic
-                        </h1>
-                        <p class="sub-title-plans">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing.
-                        </p>
-                        <h1 class="card-princing-plans">
-                            R$29,99/mês
-                        </h1>
-                        <p class="subtitle-princing">ou R$199,90 por ano.</p>
-                        <button class="btn-card-plans">
-                            Escolher
-                        </button>
+                        <div class="content-header-plans">
+                            <span class="icon-card">
+                                <img src="img/hand-icon.svg" alt="hand">
+                            </span>
+                            <h1 class="title-card-plans">
+                                EducaSilver
+                            </h1>
+                            <p class="sub-title-plans">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing.
+                            </p>
+                        </div>
+                        <div class="content-footer-plans">
+                            <h1 class="card-princing-plans">
+                                R$29,99/mês
+                            </h1>
+                            <p class="subtitle-princing">ou R$199,90 por ano.</p>
+                            <button class="btn-card-plans">
+                                Escolher
+                            </button>
+                        </div>
                     </div>
                 </div>
+
                 <div class="card-plans">
                     <div class="content-card-plans">
                         <span class="pop-best">
                             <img src="img/best-seller-icon.svg" alt="best" class="icon-best">
                             <p class="text-best">Mais escolhido!</p>
-                        </span><span class="icon-card">
-                            <img src="img/hand-icon.svg" alt="hand">
                         </span>
-                        <h1 class="title-card-plans">
-                            EducaBasic
-                        </h1>
-                        <p class="sub-title-plans">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing.
-                        </p>
-                        <h1 class="card-princing-plans">
-                            R$29,99/mês
-                        </h1>
-                        <p class="subtitle-princing">ou R$199,90 por ano.</p>
-                        <button class="btn-card-plans" type="submit">
-                            Escolher
-                        </button>
+                        <div class="content-header-plans">
+                            <span class="icon-card">
+                                <img src="img/hand-icon.svg" alt="hand">
+                            </span>
+                            <h1 class="title-card-plans">
+                                EducaGold
+                            </h1>
+                            <p class="sub-title-plans">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing.
+                            </p>
+                        </div>
+                        <div class="content-footer-plans">
+                            <h1 class="card-princing-plans">
+                                R$29,99/mês
+                            </h1>
+                            <p class="subtitle-princing">ou R$199,90 por ano.</p>
+                            <button class="btn-card-plans" type="submit">
+                                Escolher
+                            </button>
+                        </div>
                     </div>
                 </div>
+
                 <div class="card-plans">
-                    <div class="content-card-plans"><span class="icon-card">
-                            <img src="img/hand-icon.svg" alt="hand">
-                        </span>
-                        <h1 class="title-card-plans">
-                            EducaBasic
-                        </h1>
-                        <p class="sub-title-plans">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing.
-                        </p>
-                        <h1 class="card-princing-plans">
-                            R$29,99/mês
-                        </h1>
-                        <p class="subtitle-princing">ou R$199,90 por ano.</p>
-                        <button class="btn-card-plans">
-                            Escolher
-                        </button>
+                    <div class="content-card-plans">
+                        <div class="content-header-plans">
+                            <span class="icon-card">
+                                <img src="img/hand-icon.svg" alt="hand">
+                            </span>
+                            <h1 class="title-card-plans">
+                                EducaDiamond
+                            </h1>
+                            <p class="sub-title-plans">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing.
+                            </p>
+                        </div>
+                        <div class="content-footer-plans">
+                            <h1 class="card-princing-plans">
+                                R$29,99/mês
+                            </h1>
+                            <p class="subtitle-princing">ou R$199,90 por ano.</p>
+                            <button class="btn-card-plans">
+                                Escolher
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <button class="btn-nextios">
+                    <img src="img/arrow-next.svg" alt="prev" width="50px" height="50px" class="btn-next controls">
+                </button>
             </div>
         </section>
         <section class="form">
@@ -245,21 +229,56 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="social-media">
+            <p>Conecte-se conosco nas redes sociais:</p>
+            <ul class="midias">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffa500;"></i></a>
+
+                <a href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: #ffa500;"></i></a>
+
+                <a href="#"><i class="fa-brands fa-google fa-2xl" style="color: #ffa500;"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffa500;"></i></a>
+
+                <a href="#"><i class="fa-brands fa-github fa-2xl" style="color: #ffa500;"></i></a>
+            </ul>
+        </div>
+        <div class="content-footer">
+            <div class="box-1">
+                <h1>EducaMaster</h1>
+                <p> Sua plataforma preferida de aprendizado.</p>
+            </div>
+            <div class="box-2">
+                <h1>Produtos</h1>
+                <ul class="links">
+                    <a href="">lorem</a>
+                    <a href="">lorem</a>
+                    <a href="">lorem</a>
+                </ul>
+            </div>
+            <div class="box-3">
+                <h1>Links</h1>
+                <ul class="links">
+                    <a href="">lorem</a>
+                    <a href="">lorem</a>
+                    <a href="">lorem</a>
+                </ul>
+            </div>
+            <div class="box-4">
+                <h1>Contato</h1>
+                <ul class="links">
+                    <a href="">lorem</a>
+                    <a href="">lorem</a>
+                    <a href="">lorem</a>
+                </ul>
+            </div>
+        </div>
+        <div class="box-copyright">
+            <p>&copy 2023 Copyright: EducaMaster.com</p>
+        </div>
+    </footer>
     <script src="app.js"></script>
-    <script>
-        function focusInput(inputId) {
-            var input = document.getElementById(inputId);
-            input.placeholder = ""; // Remove o texto do placeholder
-            input.classList.add("placeholder-hidden"); // Adiciona a classe para tornar o texto invisível
-        }
-
-        function blurInput(inputId) {
-            var input = document.getElementById(inputId);
-            input.placeholder = inputId === "emailInput" ? "Email address" : "Password (+ 8 characters)"; // Restaura o texto do placeholder
-            input.classList.remove("placeholder-hidden"); // Remove a classe para tornar o texto visível novamente
-        }
-
-    </script>
 </body>
 
 </html>

@@ -639,6 +639,11 @@ a {
   }
 }
 @media screen and (max-width: 430px) {
+  .text-header {
+    width: 80%;
+    margin: 5px auto;
+    font-size: 2.3em;
+  }
   .main {
     padding: 0;
   }
@@ -652,5 +657,16 @@ a {
   }
   .midias {
     margin: 0 auto;
+  }
+  .card-plans {
+    margin-bottom: 20px;
+  }
+  .carousel-plans {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .box-title-form > h1 {
+    font-size: 1.7em;
   }
 }

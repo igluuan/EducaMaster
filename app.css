@@ -11,6 +11,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   height: 100%;
@@ -78,21 +79,20 @@ li {
   align-items: center;
   gap: 30px;
 }
-.menu > li,
-a {
+.menu > a {
   color: var(--bgColor);
-  font-size: 1.4em;
+  font-size: 2.5em;
   list-style: none;
   text-decoration: none;
   margin-right: 7px;
 }
-.menu > li {
+.menu > a {
   border-bottom: 1px solid transparent;
   transition: all 0.5s;
   transform-origin: left;
 }
 
-.menu > li:hover {
+.menu > a:hover {
   border-bottom: 1px solid var(--bgColor);
 }
 .main {
@@ -108,7 +108,7 @@ a {
 .text-box {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   padding: 15px;
 }
 .text-header {
@@ -165,7 +165,7 @@ a {
 }
 
 .planos {
-  margin-top: 40px;
+  margin-top: 7px;
   padding: 20px;
 }
 .box-text-plans {
@@ -289,7 +289,7 @@ a {
   background-color: var(--primaryColorActive);
 }
 .form {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .bg-color-form {
   display: flex;
@@ -513,7 +513,7 @@ a {
   color: var(--bgColor);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .text-header {
     font-size: 3.5em;
   }
@@ -567,6 +567,10 @@ a {
     width: 355px;
     height: 375px;
   }
+  .card {
+    width: 200px;
+    height: 200px;
+  }
 }
 @media screen and (max-width: 630px) {
   .text-header {
@@ -607,11 +611,55 @@ a {
   .content-footer {
     padding: 15px 20px 20px 20px;
   }
-  .nav {
-    display: none;
+  .menu {
+    display: block;
+    width: 50vw;
+    height: 0;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: var(--secondColor);
+    z-index: 1000;
+    visibility: hidden;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: end;
+  }
+  .menu li a {
+    color: var(--bgColor);
+    text-decoration: none;
+    font-size: 3em;
+    margin: 0 20px;
+    padding: 20px 0;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+  }
+  .user a {
+    text-decoration: none;
+    color: var(--bgColor);
+    font-size: 3em;
+  }
+  .circle {
+    background-color: var(--secondColorHover);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
   .btn-menu {
     display: block;
+    position: absolute;
+    right: 20px;
+  }
+  #nav.active .menu {
+    display: block;
+    height: calc(100vh - 65px);
+    visibility: visible;
   }
 }
 @media screen and (max-width: 470px) {

@@ -20,7 +20,8 @@
                     <img src="img/icon-logo.svg" alt="logo" class="icon-logo">
                 </span>
             </div>
-            <button class="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 448 512">
+            <button class="btn-menu">
+                <svg class="btn-click" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 448 512">
                     <style>
                         svg {
                             fill: #ffffff
@@ -28,14 +29,32 @@
                     </style>
                     <path
                         d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                </svg></button>
-            <div class="nav">
+                </svg>
+            </button>
+            <div id="nav">
                 <ul class="menu">
-                    <li><a href="">Cart</a><i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
+                    <li>
+                        <a href="">
+                            Cart
+                        </a>
                     </li>
-                    <li><a href="#plans">Planos</a><i class="fa-solid fa-coins fa-lg" style="color: #ffffff;"></i></li>
-                    <li><a href="#">Login</a><i class="fa-solid fa-right-to-bracket fa-lg" style="color: #ffffff;"></i>
+                    <li>
+                        <a href="#plans">
+                            Planos
+                        </a>
                     </li>
+                    <li>
+                        <a href="#">
+                            Login
+                        </a>
+                    </li>
+                    <div class="user">
+                        <a href="#">
+                            Admin
+                        </a>
+                        <div class="circle">
+                        </div>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -89,8 +108,8 @@
             </div>
 
         </section>
-        <section class="planos">
-            <div class="box-text-plans" id="plans">
+        <section class="planos" id="plans">
+            <div class="box-text-plans">
                 <h1>
                     Encontre o plano perfeito para você e sua empresa!
                 </h1>
@@ -277,7 +296,10 @@
             <p>&copy 2023 Copyright: EducaMaster.com</p>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="fuctions/carousel.js"></script>
+    <script src="fuctions/inputPlaceholder.js"></script>
+    <script src="fuctions/scroll.js"></script>
+    <script src="fuctions/btn-menu.js"></script>
 </body>
 
 </html>

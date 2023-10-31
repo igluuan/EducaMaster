@@ -1,340 +1,387 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link href="/reset.css" rel="stylesheet">
-    <link href="/root.css" rel="stylesheet">
-    <link href="/medias-qr.css" rel="stylesheet">
-    <link href="./components/index/header.css" rel="stylesheet">
-    <link href="./components/index/main.css" rel="stylesheet">
-    <link href="./components/index/footer.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="/reset.css" rel="stylesheet" />
+    <link href="/root.css" rel="stylesheet" />
+    <link href="/medias-qr.css" rel="stylesheet" />
+    <link href="./components/index/header.css" rel="stylesheet" />
+    <link href="./components/index/main.css" rel="stylesheet" />
+    <link href="./components/index/footer.css" rel="stylesheet" />
     <title>EducaMaster - Masterize seu aprendizado</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="content-header">
-            <div class="box-logo">
-                <div class="icon-logo">
-                    <ion-icon name="logo-slack"></ion-icon>
-                    <span>EducaMaster</span>
-                </div>
-            </div>
-            <button class="btn-menu">
-                <svg class="btn-click" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 448 512">
-                    <style>
-                        svg {
-                            fill: #ffffff
-                        }
-                    </style>
-                    <path
-                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                </svg>
-            </button>
-            <div id="nav">
-                <ul class="menu">
-                    <li>
-                        <a href="">
-                            <span class="title-menu">Home</span>
-                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <span class="title-menu">Planos</span>
-                            <span class="icon"><ion-icon name="wallet-outline"></ion-icon></span>
-                        </a>
-                    </li>
-                    <li class="logout">
-                        <a href="">
-                            <span class="title-menu">Logout</span>
-                            <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
-                        </a>
-                    </li>
-                    <li class="account">
-                        <a href="">
-                            <span class="name-account">@User</span>
-                            <span class="img-caixa"><img src="img/avatar.jpg" alt=""></span>
-                        </a>
-                    </li>
-                    <li class="cart-icon">
-                        <div class="counter-cart">2</div>
-                        <a href="">
-                            <span class="icon-cart"><ion-icon name="cart-outline"></ion-icon></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="content-header">
+        <div class="box-logo">
+          <div class="icon-logo">
+            <ion-icon name="logo-slack"></ion-icon>
+            <span>EducaMaster</span>
+          </div>
         </div>
+        <button class="btn-menu">
+          <svg
+            class="btn-click"
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 0 448 512"
+          >
+            <style>
+              svg {
+                fill: #ffffff;
+              }
+            </style>
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </button>
+        <div id="nav">
+          <ul class="menu">
+            <li>
+              <a href="">
+                <span class="title-menu">Home</span>
+                <span class="icon"
+                  ><ion-icon name="home-outline"></ion-icon
+                ></span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <span class="title-menu">Planos</span>
+                <span class="icon"
+                  ><ion-icon name="wallet-outline"></ion-icon
+                ></span>
+              </a>
+            </li>
+            <li class="logout">
+              <a href="">
+                <span class="title-menu">Logout</span>
+                <span class="icon"
+                  ><ion-icon name="log-in-outline"></ion-icon
+                ></span>
+              </a>
+            </li>
+            <li class="account">
+              <a href="">
+                <span class="name-account">@User</span>
+                <span class="img-caixa"
+                  ><img src="img/avatar.jpg" alt=""
+                /></span>
+              </a>
+            </li>
+            <li id="cart-icon">
+              <div class="counter-cart">2</div>
+              <a href="">
+                <span class="icon-cart"
+                  ><ion-icon name="cart-outline"></ion-icon
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main class="main">
-        <section class="box-one">
-            <div class="text-box">
-                <h1 class="text-header">Bem vindo ao <span style="color: #8b9aff ;">EducaMaster</span>!
-                    Sua plataforma preferida de aprendizado</h1>
-                <div class="box-svg">
-                    <img src="img/svg-rocket.svg" alt="foguete" class="svg-rocket">
-                </div>
+      <section class="box-one">
+        <div class="text-box">
+          <h1 class="text-header">
+            Bem vindo ao <span style="color: #8b9aff">EducaMaster</span>! Sua
+            plataforma preferida de aprendizado
+          </h1>
+          <div class="box-svg">
+            <img src="img/svg-rocket.svg" alt="foguete" class="svg-rocket" />
+          </div>
+        </div>
+        <div class="carousel">
+          <div class="card">
+            <div class="content-card">
+              <div class="box-icon">
+                <img src="img/mobile-icon.svg" alt="celular" class="svg-icon" />
+              </div>
+              <h3 class="text-card">
+                Acompanhe os conteúdos a qualquer hora e qualquer lugar.
+              </h3>
             </div>
-            <div class="carousel">
-                <div class="card">
-                    <div class="content-card">
-                        <div class="box-icon">
-                            <img src="img/mobile-icon.svg" alt="celular" class="svg-icon">
-                        </div>
-                        <h3 class="text-card">Acompanhe os conteúdos a qualquer hora e qualquer lugar.
-                        </h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content-card">
-                        <div class="box-icon">
-                            <img src="img/coin-icon.svg" alt="celular" class="svg-icon">
-                        </div>
-                        <h3 class="text-card">Preços baixos e acessíveis ao seu bolso.
-                        </h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content-card">
-                        <div class="box-icon">
-                            <img src="img/nuvem-icon.svg" alt="celular" class="svg-icon">
-                        </div>
-                        <h3 class="text-card">Faça o download e assista sem internet .
-                        </h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content-card">
-                        <div class="box-icon">
-                            <img src="img/lampada-icon.svg" alt="celular" class="svg-icon">
-                        </div>
-                        <h3 class="text-card">Conteúdos diariamente atualizados para você.
-                        </h3>
-                    </div>
-                </div>
+          </div>
+          <div class="card">
+            <div class="content-card">
+              <div class="box-icon">
+                <img src="img/coin-icon.svg" alt="celular" class="svg-icon" />
+              </div>
+              <h3 class="text-card">
+                Preços baixos e acessíveis ao seu bolso.
+              </h3>
             </div>
+          </div>
+          <div class="card">
+            <div class="content-card">
+              <div class="box-icon">
+                <img src="img/nuvem-icon.svg" alt="celular" class="svg-icon" />
+              </div>
+              <h3 class="text-card">
+                Faça o download e assista sem internet .
+              </h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content-card">
+              <div class="box-icon">
+                <img
+                  src="img/lampada-icon.svg"
+                  alt="celular"
+                  class="svg-icon"
+                />
+              </div>
+              <h3 class="text-card">
+                Conteúdos diariamente atualizados para você.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="planos" id="plans">
+        <div class="box-text-plans">
+          <h1>Encontre o plano perfeito para você e sua empresa!</h1>
+          <h3>200 empresas estão conosco, faça parte você tambêm.</h3>
+        </div>
+        <div class="carousel-plans">
+          <button class="btn-previos">
+            <img
+              src="img/arrow-prev.svg"
+              alt="prev"
+              width="50px"
+              height="50px"
+              class="btn-prev controls"
+            />
+          </button>
+          <div class="card-plans">
+            <div class="content-card-plans">
+              <div class="content-header-plans">
+                <span class="icon-card">
+                  <img src="img/hand-icon.svg" alt="hand" />
+                </span>
+                <h1 class="title-card-plans">EducaSilver</h1>
+                <p class="sub-title-plans">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="content-footer-plans">
+                <h1 class="card-princing-plans">R$29,99/mês</h1>
+                <p class="subtitle-princing">ou R$199,90 por ano.</p>
+                <button class="btn-card-plans">Escolher</button>
+              </div>
+            </div>
+          </div>
 
-        </section>
-        <section class="planos" id="plans">
-            <div class="box-text-plans">
-                <h1>
-                    Encontre o plano perfeito para você e sua empresa!
-                </h1>
-                <h3>
-                    200 empresas estão conosco, faça parte você tambêm.
-                </h3>
+          <div class="card-plans">
+            <div class="content-card-plans">
+              <span class="pop-best">
+                <img
+                  src="img/best-seller-icon.svg"
+                  alt="best"
+                  class="icon-best"
+                />
+                <p class="text-best">Mais escolhido!</p>
+              </span>
+              <div class="content-header-plans">
+                <span class="icon-card">
+                  <img src="img/hand-icon.svg" alt="hand" />
+                </span>
+                <h1 class="title-card-plans">EducaGold</h1>
+                <p class="sub-title-plans">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="content-footer-plans">
+                <h1 class="card-princing-plans">R$59,99/mês</h1>
+                <p class="subtitle-princing">ou R$399,90 por ano.</p>
+                <button class="btn-card-plans" type="submit">Escolher</button>
+              </div>
             </div>
-            <div class="carousel-plans">
-                <button class="btn-previos">
-                    <img src="img/arrow-prev.svg" alt="prev" width="50px" height="50px" class="btn-prev controls">
-                </button>
-                <div class="card-plans">
-                    <div class="content-card-plans">
-                        <div class="content-header-plans">
-                            <span class="icon-card">
-                                <img src="img/hand-icon.svg" alt="hand">
-                            </span>
-                            <h1 class="title-card-plans">
-                                EducaSilver
-                            </h1>
-                            <p class="sub-title-plans">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing.
-                            </p>
-                        </div>
-                        <div class="content-footer-plans">
-                            <h1 class="card-princing-plans">
-                                R$29,99/mês
-                            </h1>
-                            <p class="subtitle-princing">ou R$199,90 por ano.</p>
-                            <button class="btn-card-plans">
-                                Escolher
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          </div>
 
-                <div class="card-plans">
-                    <div class="content-card-plans">
-                        <span class="pop-best">
-                            <img src="img/best-seller-icon.svg" alt="best" class="icon-best">
-                            <p class="text-best">Mais escolhido!</p>
-                        </span>
-                        <div class="content-header-plans">
-                            <span class="icon-card">
-                                <img src="img/hand-icon.svg" alt="hand">
-                            </span>
-                            <h1 class="title-card-plans">
-                                EducaGold
-                            </h1>
-                            <p class="sub-title-plans">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing.
-                            </p>
-                        </div>
-                        <div class="content-footer-plans">
-                            <h1 class="card-princing-plans">
-                                R$59,99/mês
-                            </h1>
-                            <p class="subtitle-princing">ou R$399,90 por ano.</p>
-                            <button class="btn-card-plans" type="submit">
-                                Escolher
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-plans">
-                    <div class="content-card-plans">
-                        <div class="content-header-plans">
-                            <span class="icon-card">
-                                <img src="img/hand-icon.svg" alt="hand">
-                            </span>
-                            <h1 class="title-card-plans">
-                                EducaDiamond
-                            </h1>
-                            <p class="sub-title-plans">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing.
-                            </p>
-                        </div>
-                        <div class="content-footer-plans">
-                            <h1 class="card-princing-plans">
-                                R$99,99/mês
-                            </h1>
-                            <p class="subtitle-princing">ou R$499,90 por ano.</p>
-                            <button class="btn-card-plans">
-                                Escolher
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <button class="btn-nextios">
-                    <img src="img/arrow-next.svg" alt="prev" width="50px" height="50px" class="btn-next controls">
-                </button>
+          <div class="card-plans">
+            <div class="content-card-plans">
+              <div class="content-header-plans">
+                <span class="icon-card">
+                  <img src="img/hand-icon.svg" alt="hand" />
+                </span>
+                <h1 class="title-card-plans">EducaDiamond</h1>
+                <p class="sub-title-plans">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="content-footer-plans">
+                <h1 class="card-princing-plans">R$99,99/mês</h1>
+                <p class="subtitle-princing">ou R$499,90 por ano.</p>
+                <button class="btn-card-plans">Escolher</button>
+              </div>
             </div>
-        </section>
-        <section class="form">
-            <div class="box-title-form">
-                <h1>Faça login e desfrute de todas as <span style="color: #373636;">novidades</span> futuras!
-                </h1>
-            </div>
-            <div class="bg-color-form">
-                <div class="box-form">
-                    <form action="#" class="content-form">
-                        <h2 class="title-card">Login</h2>
-                        <div class="create-account">
-                            <p>
-                                Novo usuário?
-                            </p>
-                            <a href="newAccount.html">Crie uma conta
-                                agora!</a>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email address" required="on" autocomplete="off"
-                                minlength="2" id="emailInput" placeholder="Email" onfocus="focusInput('emailInput')"
-                                onblur="blurInput('emailInput')">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" placeholder="Password (+8 characters)" required="on"
-                                autocomplete="off" minlength="2" id="passwordInput" placeholder="Senha"
-                                onfocus="focusInput('passwordInput')" onblur="blurInput('passwordInput')">
-                        </div>
-                        <a href="#" class="forgout">Esqueceu a senha?</a>
-                        <div class="box-wrapper">
-                            <ul class="circle">
-                                <a href="#" class="social"><img src="img/facebook-icon.svg" alt="facebook"></a>
-                                <a href="#" class="social"><img src=" img/github-icon.svg" alt="github"></a>
-                                <a href="#" class="social"><img src=" img/google-icon.svg" alt="google"></a>
-                            </ul>
-                        </div>
-                        <button type="submit" class="btn-sign">
-                            Entrar
-                        </button>
-                    </form>
-                </div>
-                <div class="box-svg-right"><img src="img/svg-right.svg" alt="svg-right" class="svg-right"></div>
-            </div>
-        </section>
+          </div>
+          <button class="btn-nextios">
+            <img
+              src="img/arrow-next.svg"
+              alt="prev"
+              width="50px"
+              height="50px"
+              class="btn-next controls"
+            />
+          </button>
+        </div>
+      </section>
+      <section class="form">
+        <div class="box-title-form">
+          <h1>
+            Faça login e desfrute de todas as
+            <span style="color: #373636">novidades</span> futuras!
+          </h1>
+        </div>
+        <div class="bg-color-form">
+          <div class="box-form">
+            <form action="#" class="content-form">
+              <h2 class="title-card">Login</h2>
+              <div class="create-account">
+                <p>Novo usuário?</p>
+                <a href="newAccount.html">Crie uma conta agora!</a>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  required="on"
+                  autocomplete="off"
+                  minlength="2"
+                  id="emailInput"
+                  placeholder="Email"
+                  onfocus="focusInput('emailInput')"
+                  onblur="blurInput('emailInput')"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  placeholder="Password (+8 characters)"
+                  required="on"
+                  autocomplete="off"
+                  minlength="2"
+                  id="passwordInput"
+                  placeholder="Senha"
+                  onfocus="focusInput('passwordInput')"
+                  onblur="blurInput('passwordInput')"
+                />
+              </div>
+              <a href="#" class="forgout">Esqueceu a senha?</a>
+              <div class="box-wrapper">
+                <ul class="circle">
+                  <a href="#" class="social"
+                    ><img src="img/facebook-icon.svg" alt="facebook"
+                  /></a>
+                  <a href="#" class="social"
+                    ><img src=" img/github-icon.svg" alt="github"
+                  /></a>
+                  <a href="#" class="social"
+                    ><img src=" img/google-icon.svg" alt="google"
+                  /></a>
+                </ul>
+              </div>
+              <button type="submit" class="btn-sign">Entrar</button>
+            </form>
+          </div>
+          <div class="box-svg-right">
+            <img src="img/svg-right.svg" alt="svg-right" class="svg-right" />
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="social-media">
-            <p>Conecte-se conosco nas redes sociais:</p>
-            <ul class="midias">
-                <a href="#">
-                    <span class="icon-footer" s>
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </span>
-                </a>
+      <div class="social-media">
+        <p>Conecte-se conosco nas redes sociais:</p>
+        <ul class="midias">
+          <a href="#">
+            <span class="icon-footer" s>
+              <ion-icon name="logo-facebook"></ion-icon>
+            </span>
+          </a>
 
-                <a href="#">
-                    <span class="icon-footer">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </span>
-                </a>
+          <a href="#">
+            <span class="icon-footer">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </span>
+          </a>
 
+          <a href="#">
+            <span class="icon-footer">
+              <ion-icon name="logo-google"></ion-icon>
+            </span>
+          </a>
 
-                <a href="#">
-                    <span class="icon-footer">
-                        <ion-icon name="logo-google"></ion-icon>
-                    </span>
-                </a>
+          <a href="#">
+            <span class="icon-footer">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </span>
+          </a>
 
-                <a href="#">
-                    <span class="icon-footer">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </span>
-                </a>
-
-                <a href="#">
-                    <span class="icon-footer">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </span>
-                </a>
-            </ul>
+          <a href="#">
+            <span class="icon-footer">
+              <ion-icon name="logo-github"></ion-icon>
+            </span>
+          </a>
+        </ul>
+      </div>
+      <div class="content-footer">
+        <div class="box-1">
+          <h1>EducaMaster</h1>
+          <p>
+            Sua plataforma
+            <span style="color: var(--primaryColor)">preferida</span> de
+            aprendizado.
+          </p>
         </div>
-        <div class="content-footer">
-            <div class="box-1">
-                <h1>EducaMaster</h1>
-                <p> Sua plataforma <span style="color: var(--primaryColor);">preferida</span> de aprendizado.</p>
-            </div>
-            <div class="box-2">
-                <h1>Produtos</h1>
-                <ul class="links">
-                    <a class="link-footer" href="">Cursos</a>
-                    <a class="link-footer" href="">Mentorias</a>
-                    <a class="link-footer" href="">Dúvidas</a>
-                </ul>
-            </div>
-            <div class="box-3">
-                <h1>Links</h1>
-                <ul class="links">
-                    <a class="link-footer" href="">Novo usuário</a>
-                    <a class="link-footer" href="">Planos</a>
-                    <a class="link-footer" href="">Sobre</a>
-                </ul>
-            </div>
-            <div class="box-4">
-                <h1>Contato</h1>
-                <ul class="links">
-                    <a class="link-footer" href="">lorem</a>
-                    <a class="link-footer" href="">lorem</a>
-                    <a class="link-footer" href="">lorem</a>
-                </ul>
-            </div>
+        <div class="box-2">
+          <h1>Produtos</h1>
+          <ul class="links">
+            <a class="link-footer" href="">Cursos</a>
+            <a class="link-footer" href="">Mentorias</a>
+            <a class="link-footer" href="">Dúvidas</a>
+          </ul>
         </div>
-        <div class="box-copyright">
-            <p>&copy 2023 Copyright: EducaMaster.com</p>
+        <div class="box-3">
+          <h1>Links</h1>
+          <ul class="links">
+            <a class="link-footer" href="">Novo usuário</a>
+            <a class="link-footer" href="">Planos</a>
+            <a class="link-footer" href="">Sobre</a>
+          </ul>
         </div>
+        <div class="box-4">
+          <h1>Contato</h1>
+          <ul class="links">
+            <a class="link-footer" href="">lorem</a>
+            <a class="link-footer" href="">lorem</a>
+            <a class="link-footer" href="">lorem</a>
+          </ul>
+        </div>
+      </div>
+      <div class="box-copyright">
+        <p>&copy 2023 Copyright: EducaMaster.com</p>
+      </div>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="fuctions/carousel.js"></script>
     <script src="fuctions/inputPlaceholder.js"></script>
     <script src="fuctions/scroll.js"></script>
     <script src="fuctions/btn-menu.js"></script>
-</body>
-
+  </body>
 </html>

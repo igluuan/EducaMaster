@@ -5,20 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="app.css" />
-    <script src="https://kit.fontawesome.com/9eab525171.js" crossorigin="anonymous"></script>
-
+    <link href="/reset.css" rel="stylesheet">
+    <link href="/root.css" rel="stylesheet">
+    <link href="/medias-qr.css" rel="stylesheet">
+    <link href="./components/index/header.css" rel="stylesheet">
+    <link href="./components/index/main.css" rel="stylesheet">
+    <link href="./components/index/footer.css" rel="stylesheet">
     <title>EducaMaster - Masterize seu aprendizado</title>
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="content-header">
             <div class="box-logo">
-                <span class="icon-logo">
-                    <img src="img/icon-logo.svg" alt="logo" class="icon-logo">
-                </span>
+                <div class="icon-logo">
+                    <ion-icon name="logo-slack"></ion-icon>
+                    <span>EducaMaster</span>
+                </div>
             </div>
             <button class="btn-menu">
                 <svg class="btn-click" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 448 512">
@@ -39,34 +42,35 @@
                             <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <span class="title-menu">Carrinho</span>
-                            <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
-                        </a>
-                    </li>
+
                     <li>
                         <a href="">
                             <span class="title-menu">Planos</span>
                             <span class="icon"><ion-icon name="wallet-outline"></ion-icon></span>
                         </a>
                     </li>
-                    <li class="account">
-                        <a href="">
-                            <span class="name">@User</span>
-                            <span class="img-caixa"><img src="img/avatar.jpg" alt=""></span>
-                        </a>
-                    </li>
-                    <li>
+                    <li class="logout">
                         <a href="">
                             <span class="title-menu">Logout</span>
                             <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
                         </a>
                     </li>
+                    <li class="account">
+                        <a href="">
+                            <span class="name-account">@User</span>
+                            <span class="img-caixa"><img src="img/avatar.jpg" alt=""></span>
+                        </a>
+                    </li>
+                    <li class="cart-icon">
+                        <div class="counter-cart">2</div>
+                        <a href="">
+                            <span class="icon-cart"><ion-icon name="cart-outline"></ion-icon></span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
+    </header>
     <main class="main">
         <section class="box-one">
             <div class="text-box">
@@ -173,9 +177,9 @@
                         </div>
                         <div class="content-footer-plans">
                             <h1 class="card-princing-plans">
-                                R$29,99/mês
+                                R$59,99/mês
                             </h1>
-                            <p class="subtitle-princing">ou R$199,90 por ano.</p>
+                            <p class="subtitle-princing">ou R$399,90 por ano.</p>
                             <button class="btn-card-plans" type="submit">
                                 Escolher
                             </button>
@@ -198,9 +202,9 @@
                         </div>
                         <div class="content-footer-plans">
                             <h1 class="card-princing-plans">
-                                R$29,99/mês
+                                R$99,99/mês
                             </h1>
-                            <p class="subtitle-princing">ou R$199,90 por ano.</p>
+                            <p class="subtitle-princing">ou R$499,90 por ano.</p>
                             <button class="btn-card-plans">
                                 Escolher
                             </button>
@@ -225,7 +229,7 @@
                             <p>
                                 Novo usuário?
                             </p>
-                            <a href="#">Crie uma conta
+                            <a href="newAccount.html">Crie uma conta
                                 agora!</a>
                         </div>
                         <div class="form-group">
@@ -259,36 +263,57 @@
         <div class="social-media">
             <p>Conecte-se conosco nas redes sociais:</p>
             <ul class="midias">
-                <a href="#"><i class="fa-brands fa-facebook-f fa-2xl" style="color: #8b9aff;"></i></a>
+                <a href="#">
+                    <span class="icon-footer" s>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </span>
+                </a>
 
-                <a href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: #8b9aff;"></i></a>
+                <a href="#">
+                    <span class="icon-footer">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </span>
+                </a>
 
-                <a href="#"><i class="fa-brands fa-google fa-2xl" style="color: #8b9aff;"></i></a>
 
-                <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #8b9aff;"></i></a>
+                <a href="#">
+                    <span class="icon-footer">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </span>
+                </a>
 
-                <a href="#"><i class="fa-brands fa-github fa-2xl" style="color: #8b9aff;"></i></a>
+                <a href="#">
+                    <span class="icon-footer">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </span>
+                </a>
+
+                <a href="#">
+                    <span class="icon-footer">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </span>
+                </a>
             </ul>
         </div>
         <div class="content-footer">
             <div class="box-1">
                 <h1>EducaMaster</h1>
-                <p> Sua plataforma preferida de aprendizado.</p>
+                <p> Sua plataforma <span style="color: var(--primaryColor);">preferida</span> de aprendizado.</p>
             </div>
             <div class="box-2">
                 <h1>Produtos</h1>
                 <ul class="links">
-                    <a class="link-footer" href="">lorem</a>
-                    <a class="link-footer" href="">lorem</a>
-                    <a class="link-footer" href="">lorem</a>
+                    <a class="link-footer" href="">Cursos</a>
+                    <a class="link-footer" href="">Mentorias</a>
+                    <a class="link-footer" href="">Dúvidas</a>
                 </ul>
             </div>
             <div class="box-3">
                 <h1>Links</h1>
                 <ul class="links">
-                    <a class="link-footer" href="">lorem</a>
-                    <a class="link-footer" href="">lorem</a>
-                    <a class="link-footer" href="">lorem</a>
+                    <a class="link-footer" href="">Novo usuário</a>
+                    <a class="link-footer" href="">Planos</a>
+                    <a class="link-footer" href="">Sobre</a>
                 </ul>
             </div>
             <div class="box-4">

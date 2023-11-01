@@ -12,11 +12,10 @@ body {
 }
 
 .main {
+    height: calc(100vh - 65px);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
-    padding: 20px;
 }
 
 .box-text {

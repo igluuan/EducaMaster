@@ -1,101 +1,106 @@
 @import url(/root.css);
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    height: 100vh;
     overflow: hidden;
 }
 
-section {
-    width: 100%;
-    height: 100vh;
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.box-text {
+    margin-top: 20px;
+}
+
+.text-title {
+    color: var(--primaryColor);
+    font-size: 4em;
+    width: 350px;
+}
+
+.createSvg {
+    width: 300px;
+    height: 270px;
 }
 
 .form {
+    width: 350px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--secondColor);
-    width: 600px;
-    height: 500px;
-    z-index: 999;
 }
 
-.content-account {
-    display: grid;
-    grid-template-columns: repeat(2, 240px);
-    grid-template-rows: repeat(4, 90px);
-    grid-template-areas:
-        'name name1'
-        'email email'
-        'pass pass1'
-        'btn btn';
-    gap: 5px;
+.content-form {
+    display: flex;
+    justify-content: center;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.form-group>label {
-    color: var(--bgColor);
-    font-size: 2em;
-    margin-bottom: 3px;
+.form-group-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 10px 0;
+}
+
+.checkbox {
+    width: 25px;
+}
+
+.text-checkbox {
+    font-size: 1.7em;
+}
+
+.text-checkbox>a {
+    color: var(--primaryColor);
+}
+
+label {
+    color: var(--primaryColor);
+    font-size: 2.5em;
     cursor: pointer;
 }
 
-.form-group>input {
-    font-size: 2.7em;
-    height: 30px;
-    border-radius: 5px;
-    padding: 7px;
+input {
+    width: 300px;
+    height: 40px;
+    font-size: 2em;
+    padding-left: 10px;
+    color: var(--secondColor);
+    border: 1px solid var(--bgColorText);
     outline: none;
-    background-color: transparent;
-    border: 1px solid #fefcff76;
-}
-
-input::placeholder {
-    font-size: 0.8em;
-    color: var(--bgColorLow);
-}
-
-#form-firstName {
-    grid-area: name;
-}
-
-#form-lastName {
-    grid-area: name1;
-}
-
-#form-email {
-    grid-area: email;
-}
-
-#form-pass {
-    grid-area: pass;
-}
-
-#form-pass1 {
-    grid-area: pass1;
 }
 
 .btn-register {
-    grid-area: btn;
-    place-self: center;
-    width: 350px;
-    height: 50px;
-    font-size: 1.8em;
-    text-transform: uppercase;
     background-color: var(--primaryColor);
     color: var(--bgColor);
-    border: 1px solid var(--secondColor);
-    border-radius: 10px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    width: 300px;
+    height: 40px;
+    border: none;
+    margin-bottom: 15px;
     cursor: pointer;
-    box-shadow: 1px 5px 0 gray;
+    box-shadow: 0 5px 0 gray;
 }
 
 .btn-register:hover {
@@ -104,31 +109,41 @@ input::placeholder {
 
 .btn-register:active {
     background-color: var(--primaryColorActive);
-    box-shadow: 1px 3px 0 gray;
+    box-shadow: 0 3px 0 gray;
     transform: translateY(2px);
+
 }
 
-.left-box {
-    width: 500px;
-    height: 476px;
-    background-color: var(--primaryColorHover);
-    border: 2px solid var(--secondColor);
-    border-left: none;
-    padding: 10px;
+.text-login {
+    font-size: 1.6em;
 }
 
-.left-box>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.585));
-}
-
-.form>span {
-    color: var(--bgColorLow);
-    font-size: 1.3em;
-}
-
-.form>span>a {
+.text-login>a {
     color: var(--primaryColor);
+}
+
+@media screen and (max-width:715px) {
+    .box-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width:332px) {
+    .content-account {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        font-size: 0.8em;
+    }
+
+    .form-group,
+    .form-group>input,
+    label,
+    .box-btn,
+    .btn-register,
+    .text-login {
+        width: 250px;
+    }
 }

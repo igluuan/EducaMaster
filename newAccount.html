@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/root.css">
-    <link rel="stylesheet" href="/components/createAccount/form.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/root.css" />
+    <link rel="stylesheet" href="/components/createAccount/form.css" />
+    <link rel="stylesheet" href="/components/createAccount/header.css" />
     <title>Comece sua jornada agora!</title>
-</head>
+  </head>
 
-<body>
-    <section>
-        <div class="form">
-            <form action="" class="content-account">
-                <div class="form-group" id="form-firstName">
-                    <label for="firstName">Primeiro nome</label>
-                    <input type="text" required="on" autocomplete="off" placeholder="Luan" id="firstName">
-                </div>
+  <body>
+    <header class="header">
+      <div class="content-header">
+        <h1>EducaMaster</h1>
+      </div>
+    </header>
+    <section class="main">
+      <div class="box-text">
+        <h1 class="text-title">Novo usuário? Crie uma conta agora mesmo!</h1>
+        <img src="img/createimg.svg" alt="" class="createSvg" />
+      </div>
+      <div class="form">
+        <form action="" class="content-account">
+          <div class="form-group" id="form-firstName">
+            <label for="firstName">Usuário</label>
+            <input
+              type="text"
+              required="on"
+              autocomplete="off"
+              placeholder="Luan"
+              id="firstName"
+            />
+          </div>
 
-                <div class="form-group" id="form-lastName">
-                    <label for="lastName">Último nome</label>
-                    <input type="text" required="on" autocomplete="off" placeholder="Freitas" id="lastName">
-                </div>
+          <div class="form-group" id="form-email">
+            <label for="inputEmail"> Email</label>
+            <input
+              type="email"
+              required="on"
+              autocomplete="off"
+              placeholder="luanfreitas@example.com"
+              id="inputEmail"
+            />
+          </div>
 
-                <div class="form-group" id="form-email">
-                    <label for="inputEmail"> Email</label>
-                    <input type="email" required="on" autocomplete="off" placeholder="luanfreitas@example.com"
-                        id="inputEmail">
-                </div>
+          <div class="form-group" id="form-pass">
+            <label for="inputPass">Senha</label>
+            <input
+              type="password"
+              required="on"
+              autocomplete="off"
+              placeholder=""
+              id="inputPass"
+            />
+          </div>
 
-                <div class="form-group" id="form-pass">
-                    <label for="inputPass">Senha</label>
-                    <input type="password" required="on" autocomplete="off" placeholder="" id="inputPass">
-                </div>
-
-                <div class="form-group" id="form-pass1">
-                    <label for="inputPassconfirm">Confirme sua senha</label>
-                    <input type="password" required="on" autocomplete="off" placeholder="" id="inputPassconfirm">
-                </div>
-
-                <button type="submit" class="btn-register">Criar conta</button>
-            </form>
-            <span>Você possui uma conta? <a href="index.html">Faça login!</a></span>
-        </div>
-        <div class="left-box">
-            <img src="img/left-img.svg" alt="">
-        </div>
+          <div class="form-group" id="form-pass1">
+            <label for="inputPassconfirm">Confirme sua senha</label>
+            <input
+              type="password"
+              required="on"
+              autocomplete="off"
+              placeholder=""
+              id="inputPassconfirm"
+            />
+          </div>
+          <div class="form-group-check">
+            <input type="checkbox" class="checkbox" />
+            <span class="text-checkbox"
+              >Eu li e concordo com os
+              <a href="termos.html" target="_blank">Termos</a>.</span
+            >
+          </div>
+          <div class="box-btn">
+            <button type="submit" class="btn-register">Criar conta</button>
+          </div>
+        </form>
+        <span class="text-login"
+          >Você possui uma conta? <a href="index.html">Faça login!</a></span
+        >
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
